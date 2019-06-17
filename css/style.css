@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-header {
   background: url(../images/v4.jpg) no-repeat;
   background-size: cover;
-  min-height: 410px;
+  min-height: 579px;
 }
 
 .bg-color {
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-brand {
   padding: 0px;
-  height: inherit;
+  height: auto;
   font-family: 'Lato', sans-serif;
 }
 
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-  padding: 90px 0px 130px;
+  padding: 90px 0px 232px;
 }
 
 .top-title {
