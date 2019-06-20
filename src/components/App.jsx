@@ -1,9 +1,11 @@
 import Reeact, { Components } from 'react';
-
+import navComponent from './Navbar'
 class App extends Components {
     render(){
         render(
-            <div> hello</div>
+            <div> 
+                <navComponent />
+            </div>
         )
     }
 }
