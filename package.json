@@ -4,6 +4,7 @@
   "description": "Vydr.io Webpage",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -17,14 +18,20 @@
   },
   "homepage": "",
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "react": "^16.5.2",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.6",
-    "webpack": "^4.34.0",
-    "webpack-cli": "^3.3.4"
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
   }
 }
