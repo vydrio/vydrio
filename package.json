@@ -18,6 +18,8 @@
   },
   "homepage": "",
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "react": "^16.5.2",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {

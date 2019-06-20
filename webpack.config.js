@@ -1,46 +1,34 @@
-const path = require('path');
+const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
-  entry: ['./client/src/Index.js'],
-  output: {
-    filename: 'bundle.js',
-    path: path.join(__dirname, 'client/dist'),
-  },
+  entry: "./src/index.jsx",
+  mode: "development",
   module: {
     rules: [
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
-        use: [
-          'file-loader',
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              bypassOnDebug: true, // webpack@1.x
-              disable: true, // webpack@2.x and newer
-            },
-          },
-        ],
-      },
-      {
-        test: /\.jsx?$/,
-        use: ['babel-loader'],
-        exclude: /node_modules|packages/,
+        test: /\.(js|jsx)$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: "babel-loader",
+        options: { presets: ["@babel/env"] }
       },
       {
         test: /\.css$/,
-        use: ['style-loader','css-loader','sass-loader'],
-      },
-    ],
+        use: ["style-loader", "css-loader"]
+      }
+    ]
   },
-  resolve: {
-    extensions: ['.js', '.jsx'],
+  resolve: { extensions: ["*", ".js", ".jsx"] },
+  output: {
+    path: path.resolve(__dirname, "dist/"),
+    publicPath: "/dist/",
+    filename: "bundle.js"
   },
-
   devServer: {
-    contentBase: './client/dist',
-    host: 'localhost',
-    historyApiFallback: true,
-    // respond to 404s with index.html
-    inline: true,
+    contentBase: path.join(__dirname, "public/"),
+    port: 3000,
+    publicPath: "http://localhost:3000/dist/",
+    hotOnly: true
   },
+  plugins: [new webpack.HotModuleReplacementPlugin()]
 };
