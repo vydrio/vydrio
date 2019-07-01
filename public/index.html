@@ -12,25 +12,56 @@
 
   <script src="https://kit.fontawesome.com/9bb2f21ce6.js"></script>
 
+  <style>
+    #jcf * { padding:0; margin:0; font-size: 18px; box-sizing: border-box; font-family:"Helvetica"; }
+    #jcf { max-width:500px; }
+    #jcf .error { background-color:rgba(255,184,185,0.80)!important; border:solid 1px #D8000C!important; }
+    #jcf .error, #jcf .error::placeholder { color:#D8000C!important; }
+    #jcf .success { background-color:rgba(193,255,198,0.80)!important; border:solid 1px #044406!important; }
+    #jcf .success, #jcf .success::placeholder { color:#044406; }
+    #jcf .msg { display:none; padding:10px; margin-bottom:5px!important; width:99%; border-radius: 3px; }
+    #jcf .contact_message { height:200px; }
+    #jcf #send_message { text-transform:uppercase; cursor:pointer; }
+    #jcf button object { margin: -18px -5px!important; width:50px!important; }
+    #jcf select, #jcf input, #jcf textarea, #jcf button { outline:none; background:none; border:solid 1px #505050; transition: box-shadow .2s, width .2s; width:99%; max-width:99%; min-width: 99%; appearance:none; padding:10px!important; margin:0 0 5px!important; border-radius:3px;background:rgba(255,255,255,0.8); border:solid 1px #505050; }
+    #jcf select:focus, #jcf input:focus, #jcf textarea:focus, #jcf button:hover { border:solid 1px #0066FF; box-shadow:rgba(0,0,0,0.3) 0px 2px 4px; width:100%; }
+  </style>
   <title>Vydr.io</title>
 </head>
 <body>
-
-  <div id="root"></div>
   <!-- Header -->
   <header class="main-header" id="header">
       <div class="bg-color">
   <!-- Navbar begins -->
- 
+  <nav class="nav navbar navbar-expand-sm navbar-light  fixed-top" style="background-color: rgba(0, 19, 189, 0.1); height: auto;">
+      <a class="navbar-brand" href="#">
+        <span style="color: #14014d; font-size: xx-large; text-justify: auto">Vydr</span><span style="color: rgb(132, 158, 182)">.</span><span style="color: #6a71b6; font-size: xx-large;">io</span>
+      </a>
+          <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+              aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+          <div class="collapse navbar-collapse navbar-right" id="collapsibleNavId">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#feature">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+              </ul>
+      
+          </div>
+      </nav>
   <!-- Navbar ends -->
-  
   <!-- Header begins -->
   <div class="container text-center">
       <div class="wrapper wow fadeInUp delay-05s">
         <h2 class="top-title">Web Design & Development</h2>
         <h1><span class="typed"></span></h1>
         <h4 class="sub-title">Innovative Designs</h4>
-        <button type="submit" class="btn btn-submit">Contact Now</button>
+        <button type="submit" class="btn btn-submit"><a href="#contact">Contact Now</a></button>
       </div>
     </div>
   </div>
@@ -49,68 +80,6 @@
               <p class="sec-para">We chose the name Vydr.io because glass (vidrio) is the transparent barrier between us and our devices.  We want this transparency to transcend in everything that we do. When it comes to our clients Vydrio seeks to provide clear solutions in an unclear market.</p>
             </div>
           </div>
-          <div class="col-md-9">
-            <div class="col-md-6 wow fadeInRight delay-02s">
-              <div class="icon">
-                <i class="fa fa-paint-brush"></i>
-              </div>
-              <div class="icon-text">
-                <h3 class="txt-tl">Easy to Learn and Design</h3>
-                <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis
-                  euismod semper. </p>
-              </div>
-            </div>
-            <div class="col-md-6 wow fadeInRight delay-02s">
-              <div class="icon">
-                <i class="fa fa-cogs"></i>
-              </div>
-              <div class="icon-text">
-                <h3 class="txt-tl">Bootstrap 3.3.2</h3>
-                <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis
-                  euismod semper. </p>
-              </div>
-            </div>
-            <div class="col-md-6 wow fadeInRight delay-04s">
-              <div class="icon">
-                <i class="fa fa-mobile"></i>
-              </div>
-              <div class="icon-text">
-                <h3 class="txt-tl">Responsive Design</h3>
-                <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis
-                  euismod semper. </p>
-              </div>
-            </div>
-            <div class="col-md-6 wow fadeInRight delay-04s">
-              <div class="icon">
-                <i class="fa fa-desktop"></i>
-              </div>
-              <div class="icon-text">
-                <h3 class="txt-tl">No Coding, No Shortcodes</h3>
-                <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis
-                  euismod semper. </p>
-              </div>
-            </div>
-            <div class="col-md-6 wow fadeInRight delay-06s">
-              <div class="icon">
-                <i class="fa fa-lightbulb-o"></i>
-              </div>
-              <div class="icon-text">
-                <h3 class="txt-tl">High Coversion</h3>
-                <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis
-                  euismod semper. </p>
-              </div>
-            </div>
-            <div class="col-md-6 wow fadeInRight delay-06s">
-              <div class="icon">
-                <i class="fa fa-clock-o"></i>
-              </div>
-              <div class="icon-text">
-                <h3 class="txt-tl">Save Tons of Time</h3>
-                <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis
-                  euismod semper. </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -120,97 +89,59 @@
         <div class="row">
           <div class="col-md-8">
             <div class="cta-txt">
-              <h3>Subscribe For Updates</h3>
-              <p>Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much
-                more!</p>
-            </div>
+              <h3><span style="color: #14014d">Vydr</span><span style="color: #6a71b6">io</span></h3>
+              <p>IT Solutions as clear as glass</p>
           </div>
           <div class="col-md-4 text-center">
-            <a href="#" class="btn btn-submit">Subscribe Now</a>
+            <a href="#contact" class="btn btn-submit">Contact Now</a>
           </div>
         </div>
       </div>
     </section>
     <!---->
     <!---->
-    <section class="section-padding wow fadeInUp delay-02s" id="portfolio">
+    <section class="section-padding wow fadeInUp delay-02s" id="services">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-12">
+          <div class="col-md-7 col-md-10">
             <div class="section-title">
               <h2 class="head-title">Services</h2>
               <hr class="botm-line">
-              <div class="col-md-6 wow fadeInRight delay-06s">
+              <div class="col-md-7 col-md-10 wow fadeInRight delay-06s">
               <div class="icon">
                 <i class="fas fa-shopping-cart"></i>
               </div>
               <div class="icon-text">
                 <h3 class="txt-tl">Retail/E-Commerce</h3>
-                <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis
-                  euismod semper. </p>
+                <p class="txt-para">We help our clients sell globally by providing innovative and customer-centric solutions to maximize efficiency and productivity to the entire ecommerce experience through seamless integration of flexible and scalable ecommerce solutions to both ends of supply and demand, generating online growth and success.</p>
               </div>
-              <div class="col-md-6 wow fadeInRight delay-06s">
+              <div class="col-md-7 col-md-10 wow fadeInRight delay-06s">
                   <div class="icon">
                     <i class="fas fa-globe"></i>
                   </div>
                   <div class="icon-text">
                     <h3 class="txt-tl">Web and mobile development</h3>
-                    <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis
-                      euismod semper. </p>
+                    <p class="txt-para">With nearly 80% of potential clients connecting to you from a mobile device, even the simplest application has the potential to greatly expand your business to a new level. Android, iOS or both, we will help you convert your app idea into a flawless mobile app. </p>
                   </div>
               </div>
-              <div class="col-md-6 wow fadeInRight delay-06s">
+              <div class="col-md-7 col-md-10 wow fadeInRight delay-06s">
                   <div class="icon">
                     <i class="fas fa-file-alt"></i>
                   </div>
                   <div class="icon-text">
                     <h3 class="txt-tl">Custom Software Development</h3>
-                    <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis
-                      euismod semper. </p>
+                    <p class="txt-para">We create custom user-driven systems for your small business to provide clients and employees with transparent solutions including custom management software, commercial applications, refactoring of oudated systems and newly created systems that can be integrated seamlesly with existing applications. </p>
                   </div>
               </div>
             </div>
-            <div class="col-md-6 wow fadeInRight delay-06s">
+            <div class="col-md-7 col-md-10 wow fadeInRight delay-06s">
                 <div class="icon">
                   <i class="fas fa-layer-group"></i>
                 </div>
                 <div class="icon-text">
                   <h3 class="txt-tl">UI/UX Design</h3>
-                  <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis
-                    euismod semper. </p>
+                  <p class="txt-para">With a refined approach to the customer experience, we identify the perfect balance between design and functionality to produce authentic and frictionless designs, revolving around an intuitive interface and a customizable experience that reflects your brand's story. Your site will see improved user experience including increased customer loyalty, higher conversion rates, lowered abandon rates and even decreased customer service requests. </p>
                 </div>
-            </div>
-          </div>
-          <div class="col-md-9 col-sm-12">
-            <div class="col-md-4 col-sm-6 padding-right-zero">
-              <div class="portfolio-box design">
-                <img src="img/port01.jpg" alt="" class="img-responsive">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 padding-right-zero">
-              <div class="portfolio-box design">
-                <img src="img/port02.jpg" alt="" class="img-responsive">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 padding-right-zero">
-              <div class="portfolio-box design">
-                <img src="img/port03.jpg" alt="" class="img-responsive">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 padding-right-zero">
-              <div class="portfolio-box design">
-                <img src="img/port04.jpg" alt="" class="img-responsive">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 padding-right-zero">
-              <div class="portfolio-box design">
-                <img src="img/port05.jpg" alt="" class="img-responsive">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 padding-right-zero">
-              <div class="portfolio-box design">
-                <img src="img/port06.jpg" alt="" class="img-responsive">
-              </div>
             </div>
           </div>
         </div>
@@ -228,7 +159,7 @@
               </div>
             </div>
             <div class="col-md-4 text-center">
-              <a href="#" class="btn btn-submit">Subscribe Now</a>
+              <a href="#contact" class="btn btn-submit">Contact Now</a>
             </div>
           </div>
         </div>
@@ -241,51 +172,16 @@
           <div class="col-md-8 col-sm-12">
             <div class="section-title">
               <h2 class="head-title black">Contact Us</h2>
+              <p class="sec-para black">Below</p>
               <hr class="botm-line">
-              <p class="sec-para black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua..</p>
             </div>
           </div>
           <div class="col-md-12 col-sm-12">
-            <div class="col-md-4 col-sm-6" style="padding-left:0px;">
-              <h3 class="cont-title">Email Us</h3>
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <div class="contact-info">
-                <form action="" method="post" role="form" class="contactForm">
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
-                      data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
-                      data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-  
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4"
-                      data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-  
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
-                      placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                  <button type="submit" class="btn btn-send">Send</button>
-                </form>
-              </div>
-  
-            </div>
             <div class="col-md-4 col-sm-6">
-              <h3 class="cont-title">Visit Us</h3>
               <div class="location-info">
-                <p class="white"><span aria-hidden="true" class="fa fa-map-marker"></span>Mexico city, CDMX</p>
+                <p class="white"><span aria-hidden="true" class="fa fa-map-marker"></span>Dallas, Texas</p>
                 <p class="white"><span aria-hidden="true" class="fa fa-phone"></span>Phone: coming soon...</p>
-                <p class="white"><span aria-hidden="true" class="fa fa-envelope"></span>Email: <a href="" class="link-dec">carlos.f.roque96@gmail.com</a></p>
+                <p class="white"><span aria-hidden="true" class="fa fa-envelope"></span>Email: <a href="" class="link-dec">info@vydr.io</a></p>
               </div>
             </div>
             <div class="col-md-4">
@@ -302,15 +198,15 @@
     <footer class="" id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-7 footer-copyright">
-            © Carlos Franco
+          <div class="col-sm-8 footer-copyright">
+            © Vydrio
            
           </div>
-          <div class="col-sm-5 footer-social">
+          <div class="col-sm-8 footer-social">
             <div class="pull-right hidden-xs hidden-sm">
-              <a href="#"><i class="fab fa-facebook" ></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href=#><li class="fab fa-linkedin"></li></a>
+              <a href="https://www.facebook.com/Vydrio-347430402527478/?__tn__=%2Cd%2CP-R&eid=ARBHhAixNgskBMLISPMs3F6U7s4cCvv_fCx5tdqK3KAfFi4w1gjq8e_YSjyG8ICMNJEYsiO974F7fQ3l"><i class="fab fa-facebook-f" ></i></a>
+              <a href="https://twitter.com/IoVydr"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/vydr-io"><li class="fab fa-linkedin-in"></li></a>
               <a href="https://github.com/Vydrio"><i class="fab fa-github"></i></a>
             </div>
           </div>
@@ -327,5 +223,6 @@
 <script src="js/wow.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/jquery.easing.min.js"></script>
+
 </body>
 </html>

@@ -38,8 +38,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-header {
   background: url(../images/v4.jpg) no-repeat;
+  display: block;
   background-size: cover;
-  min-height: 579px;
+  min-height: 100%;
+  max-height: 100%;
 }
 
 .bg-color {
@@ -54,6 +56,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px;
   height: auto;
   font-family: 'Lato', sans-serif;
+  text-shadow: 0 0 8px #0f21c7;
 }
 
 .navbar-default .navbar-brand {
@@ -241,6 +244,8 @@ h3.txt-tl {
 
 /****/
 
+
+
 .parallax {
   background-attachment: fixed;
   background-repeat: repeat-y;
@@ -269,7 +274,7 @@ h3.txt-tl {
   font-size: 32px;
   margin-bottom: 10px;
   font-weight: 700;
-  color: #fff;
+  color: #404780;
 }
 
 .cta-txt p {
@@ -338,7 +343,7 @@ h3.txt-tl {
 }
 
 a, a:hover {
-  color: #FFD34E;
+  color: #e7e8ee;
 }
 
 .cont-title {
@@ -386,7 +391,7 @@ a, a:hover {
 
 #footer {
   background-color: RGBA(200, 215, 245, 0.8);
-  padding: 20px 0px;
+  padding: 30px 0px;
 }
 
 .footer-copyright {
